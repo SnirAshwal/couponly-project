@@ -1,16 +1,19 @@
 .ContactUs {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   min-height: 550px;
   text-align: center;
-  margin-top: 2.5em;
+  background-image: url("../../assets/GraphicElements/Main/Backgrounds/SliderBackgroindWithoutDropShaddow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .contact-us-title {
   font-family: "Asisstant", sans-serif;
-  margin-top: 1em;
   font-weight: 600;
   letter-spacing: 0.125em;
+  padding-top: 1.5em;
 }
 
 .photos-container {
@@ -64,6 +67,11 @@
   width: 40%;
   min-width: 400px;
   margin-bottom: 2em;
+  min-height: 600px;
+}
+
+.wrapper {
+  margin-bottom: 1em;
 }
 
 .wrapper .linkedIn:hover,
@@ -104,3 +112,9 @@
   color: black;
 }
 
+@media screen and (min-width:2220px) {
+  .ContactUs {
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}

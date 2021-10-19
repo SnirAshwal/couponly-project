@@ -15,10 +15,9 @@ function ContactUs(): JSX.Element {
           <div className="personal-job">Full Stack Developer</div>
           <p>Orierezblu@gmail.com</p>
           <p className="personal-about">
-            My name is Ori Erez Blushtein from Ramat-Gan, Israel.
-            <br />
-            I am a Full stack developer specializes in server side and client
-            side development.
+            My name is Ori Erez Blushtein from Ramat-Gan, Israel. I am a Full
+            stack developer specializes in server side and client side
+            development.
             <br />
             Two years ago I finished my military service as a company commander.
             During my military service I commanded over 3000 soldiers.
@@ -28,8 +27,6 @@ function ContactUs(): JSX.Element {
             <br />
             Feel free to view my projects on github or contact me on LinkedIn,
             email or my cell phone.
-            <br />
-            Would be nice to cooperate in the future.
           </p>
           <div className="wrapper">
             <a href="mailto:orierezblu@gmail.com" className="link-to">

@@ -15,9 +15,7 @@ function Main(): JSX.Element {
       <div id="about-us">
         <AboutUs />
       </div>
-      <div className="bg-coupon">
-        <ContactUs />
-      </div>
+      <ContactUs />
     </div>
   );
 }

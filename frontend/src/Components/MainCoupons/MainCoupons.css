@@ -139,3 +139,10 @@ article.lastSlide {
 article.nextSlide {
     transform: translateX(100%);
 }
+
+@media screen and (min-width:2400px) {
+    .slider-white-coupon-bg {
+        background-repeat: repeat;
+        background-size: contain;
+    }
+}

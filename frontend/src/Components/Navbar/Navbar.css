@@ -1,0 +1,203 @@
+.Navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  background-color: rgb(231, 229, 229);
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  font-size: 1em;
+  margin-right: 1.5em;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.nav-item {
+  margin-right: 1.8em;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-item:hover {
+  color: #3f8927;
+  cursor: pointer;
+}
+
+.nav-icons-container {
+  display: block;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  margin-top: 1.25em;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+  text-align: center;
+  border-radius: 10px;
+  left: -65px;
+}
+
+.cart-dropdown-content {
+  width: 350px;
+  left: -280px;
+  border-radius: 20px;
+}
+
+.cart-num-items {
+  background-color: rgb(192, 3, 3);
+  font-weight: 600;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding-left: 0.1em;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  color: white;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+
+.cart-item {
+  display: flex;
+  text-align: center;
+  border-bottom: 6px solid green;
+}
+
+.cart-item-img {
+  width: 80px;
+}
+
+.cart-item-text {
+  margin: 0.5em auto;
+}
+
+.first-cart-item-img {
+  border-radius: 20px 0 0 0;
+}
+
+.first-cart-cancel-btn {
+  border-radius: 0 20px 0 0;
+}
+
+.cart-cancel-btn {
+  outline: none;
+  border-color: transparent;
+  overflow: hidden;
+  color: rgb(168, 1, 1);
+}
+
+.cart-cancel-btn:hover {
+  background-color: rgb(168, 1, 1);
+  color: white;
+}
+
+.coupons-dropdown {
+  left: -40%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-icon {
+  color: black;
+  font-weight: 600;
+}
+
+.nav-icon:hover {
+  color: #3f8927;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  padding: 0.5em 1em;
+  background-image: linear-gradient(to right, #d8a547 0%, #f0b616 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  border: none;
+  margin: 0.5em auto;
+}
+
+.checkout-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.search-dropdown-content {
+  left: -100px;
+}
+
+.search-input {
+  width: 100%;
+  border: 3px solid green;
+  border-radius: 10px 10px 0 0;
+}
+
+.search-btn {
+  border: none;
+  background: none;
+  width: 100%;
+}
+
+.search-btn:hover {
+  color: white;
+  background-color: green;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .flex-menu-icon {
+    display: none;
+  }
+}

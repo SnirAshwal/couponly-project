@@ -1,0 +1,51 @@
+.Statistics {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.statistics-info {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 8px 15px -5px,
+        rgba(0, 0, 0, 0.5) 0px 5px 10px -8px;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin: 0.5em;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 1em;
+    transition: all 0.3s ease;
+}
+
+.statistics-info:hover {
+    background: linear-gradient(104deg,
+            rgba(20, 121, 16, 1) 0%,
+            rgb(77, 139, 9) 100%);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 16px 27px -5px,
+        rgba(0, 0, 0, 0.15) 0px 11px 16px -8px;
+    transform: scale(1.05);
+}
+
+.statistics-info-logo {
+    background: -webkit-linear-gradient(104deg,
+            rgba(20, 121, 16, 1) 0%,
+            rgb(77, 139, 9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statistics-info-header {
+    font-size: 1rem;
+}
+
+.statistics-info-result {
+    font-size: 2.5rem;
+    font-weight: 600;
+}

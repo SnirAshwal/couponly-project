@@ -1,0 +1,22 @@
+.Page404 {
+    width: 100%;
+    overflow: clip;
+}
+
+.page404-img {
+    width: 100%;
+
+}
+
+@media screen and(min-width: 600px) {
+    .Page404 {
+        position: relative;
+        min-width: 800px;
+    }
+
+    .page404-img {
+        min-width: 1000px;
+
+    }
+
+}

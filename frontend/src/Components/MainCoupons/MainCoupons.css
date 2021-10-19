@@ -1,0 +1,141 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.slider-white-coupon-bg {
+    width: 100%;
+    background-image: url("../../assets/GraphicElements/Main/Backgrounds/SliderBackgroindWithoutDropShaddow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 2em;
+}
+
+.main-coupons-title {
+    background-image: linear-gradient(120deg, #5fae45, #1e540f 100%);
+    background-repeat: no-repeat;
+    background-size: 40% 0.15em;
+    background-position: 50% 80%;
+    transition: background-size 0.25s ease-in;
+    position: absolute;
+    top: -60px;
+    padding: 0.3em;
+    font-size: 1.5rem;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    border: 5px solid rgb(240, 240, 240);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+
+.main-coupons-title-white-bg {
+    background-color: white;
+    border: 5px solid white;
+    top: -40px;
+}
+
+.main-coupons-title:hover {
+    background-size: 100% 100% !important;
+    color: white;
+}
+
+.section {
+    width: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.coupon-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coupon {
+    width: 20%;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 1050px) {
+    .coupon-section {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .coupon-section {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 945px) {
+    .section {
+        width: 95vw;
+    }
+}
+
+
+.prev,
+.next {
+    transform: translateY(-50%);
+    color: grey;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.prev:hover,
+.next:hover {
+    background: rgb(202, 202, 202);
+}
+
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article.lastSlide {
+    transform: translateX(-100%);
+}
+
+article.nextSlide {
+    transform: translateX(100%);
+}

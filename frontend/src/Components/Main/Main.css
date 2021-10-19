@@ -1,0 +1,11 @@
+.Main {}
+
+.bg-coupon {
+  background-image: url("../../assets/GraphicElements/Main/Backgrounds/SliderBackgroindWithoutDropShaddow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

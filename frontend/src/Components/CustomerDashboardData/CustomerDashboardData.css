@@ -1,0 +1,63 @@
+.CustomerDashboardData {
+    width: 100%;
+}
+
+.get-coupons-forms-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.get-coupons-form {
+    background: linear-gradient(104deg,
+            rgba(20, 121, 16, 1) 0%,
+            rgb(77, 139, 9) 100%);
+    ;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+
+.get-coupons-forms-container form {
+    width: 40%;
+    text-align: center;
+}
+
+.get-coupons-forms-container select {
+    border-radius: 10px;
+    margin-top: 0.5em;
+    width: 90px;
+}
+
+.get-coupons-forms-container input {
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 0.5em;
+}
+
+.get-coupons-forms-container button {
+    border-radius: 20px;
+    border-color: transparent;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.get-coupons-forms-container button:hover {
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+}
+
+#restart-coupon-btn {
+    color: white;
+    background: linear-gradient(104deg,
+            rgba(20, 121, 16, 1) 0%,
+            rgb(77, 139, 9) 100%);
+    ;
+    padding: 0.4em;
+    margin: 0;
+
+}

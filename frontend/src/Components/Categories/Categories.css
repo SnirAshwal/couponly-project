@@ -1,0 +1,333 @@
+.categories {
+  width: 100%;
+  background-image: url("../../assets/GraphicElements/Main/Backgrounds/SliderBackgroindWithoutDropShaddow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  /* background-color: white; */
+  position: relative;
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 550px;
+}
+
+.categories-title {
+  background-image: linear-gradient(120deg, #5fae45, #1e540f 100%);
+  background-repeat: no-repeat;
+  background-size: 40% 0.15em;
+  background-position: 50% 80%;
+  transition: background-size 0.25s ease-in;
+  position: absolute;
+  padding: 0.3em;
+  left: 50%;
+  transform: translate(-50%, -480%);
+  width: 200px;
+  background-color: white;
+  font-size: 1.5rem;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  border: 5px solid white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.categories-title:hover {
+  background-size: 100% 100% !important;
+  color: white;
+}
+
+.categories__grid {
+  width: 80%;
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 20px;
+  height: 400px;
+}
+
+/*General Elements*/
+.categories-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  position: relative;
+  height: 100%;
+  min-height: 10rem;
+  display: flex;
+  /* background-position: 20% 30%; */
+}
+
+.categories-card__side {
+  height: 100%;
+  color: white;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  position: absolute;
+  border-radius: 1rem;
+  background-size: cover;
+  /* background-position: top; */
+  transition: all 0.8s ease;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-position: 50% 50%;
+}
+
+.categories-card__side--back {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.categories-card:hover .categories-card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.categories-card:hover .categories-card__side--back {
+  transform: rotateY(0);
+}
+
+/*Vacation Elements*/
+.vacation--grid {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.categories-card__side--front--vacation {
+  background-image: url("../../assets/GraphicElements/Main/Categories/VacationPhoto.jpg");
+  text-align: center;
+  writing-mode: vertical-lr;
+  vertical-align: middle;
+  line-height: 320px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.categories-card__side--back--vacation {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(75, 163, 255, 1) 100%);
+}
+
+/*Food elements*/
+.food--grid {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.categories-card__side--front--food {
+  background-image: url("../../assets/GraphicElements/Main/Categories/FoodPhoto.jpg");
+  background-position: 50% 35%;
+}
+
+/*Electronics elements*/
+.categories-card__side--back--food {
+  background: rgb(124, 124, 124);
+  background: linear-gradient(120deg,
+      rgba(124, 124, 124, 1) 0%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+/*Fashion elements*/
+.fashion--grid {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.categories-card__side--front--fashion {
+  background-image: url("../../assets/GraphicElements/Main/Categories/FashioPhoto.jpeg");
+  background-position: 50% 10%;
+}
+
+.categories-card__side--back--fashion {
+  background: rgb(255, 171, 0);
+  background: linear-gradient(120deg,
+      rgba(255, 171, 0, 1) 0%,
+      rgba(232, 255, 0, 1) 100%);
+}
+
+/*Electronics elements*/
+.electronics--grid {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.categories-card__side--front--electronics {
+  background-image: url("../../assets/GraphicElements/Main/Categories/ElectronicsPhoto.jpg");
+}
+
+.categories-card__side--back--electronics {
+  background: rgb(156, 246, 102);
+  background: linear-gradient(120deg,
+      rgba(156, 246, 102, 1) 0%,
+      rgba(144, 97, 14, 1) 100%);
+}
+
+/*Decor elements*/
+.decor--grid {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.categories-card__side--front--decor {
+  background-image: url("../../assets/GraphicElements/Main/Categories/DecorPhoto.jpg");
+}
+
+.categories-card__side--back--decor {
+  background: rgb(48, 114, 193);
+  background: linear-gradient(120deg,
+      rgba(48, 114, 193, 1) 0%,
+      rgba(255, 189, 75, 1) 100%);
+}
+
+/*Attractions elements*/
+.attractions--grid {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.categories-card__side--front--attractions {
+  background-image: url("../../assets/GraphicElements/Main/Categories/AttractionPhoto.jpg");
+}
+
+.categories-card__side--back--attractions {
+  background: rgb(47, 220, 227);
+  background: linear-gradient(120deg,
+      rgba(47, 220, 227, 1) 0%,
+      rgba(75, 255, 168, 1) 100%);
+}
+
+/*Beauty elements*/
+.beauty--grid {
+  grid-area: 1 / 4 / 2 / 6;
+}
+
+.categories-card__side--front--beauty {
+  background-image: url("../../assets/GraphicElements/Main/Categories/BeautyPhoto.jpg");
+}
+
+.categories-card__side--back--beauty {
+  background: rgb(124, 124, 124);
+  background: linear-gradient(120deg,
+      rgba(124, 124, 124, 1) 0%,
+      rgba(255, 255, 255, 1) 100%);
+}
+
+@media (max-width: 760px) {
+
+  .categories {
+    height: 800px;
+  }
+
+  .categories-title {
+    transform: translate(-50%, -680%);
+
+  }
+
+  .categories__grid {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    transition: all 2s ease-in-out;
+    height: 600px;
+  }
+
+  .fashion--grid {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .food--grid {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .vacation--grid {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+
+  .decor--grid {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .beauty--grid {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .attractions--grid {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .electronics--grid {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+}
+
+@media (max-width: 500px) {
+
+
+  .categories {
+    height: 1500px;
+  }
+
+  .categories-title {
+    transform: translate(-50%, -1240%);
+  }
+
+  .categories__grid {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    height: 1250px;
+    transition: all 2s ease-in-out;
+  }
+
+  .fashion--grid {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .food--grid {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .vacation--grid {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .decor--grid {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+
+  .beauty--grid {
+    grid-area: 5 / 1 / 6 / 3;
+  }
+
+  .attractions--grid {
+    grid-area: 6 / 1 / 7 / 3;
+  }
+
+  .electronics--grid {
+    grid-area: 7 / 1 / 8 / 3;
+  }
+}

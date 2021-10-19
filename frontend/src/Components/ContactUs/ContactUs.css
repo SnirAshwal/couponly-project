@@ -1,0 +1,106 @@
+.ContactUs {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 550px;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.contact-us-title {
+  font-family: "Asisstant", sans-serif;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+}
+
+.photos-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.personal-about {
+  font-size: 1.2rem;
+}
+
+.img-circle,
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -100px;
+}
+
+.img-circle-snir {
+  background-image: url("../../assets/GraphicElements/linkedinPhotos/SnirLinkedinPhoto.jpg");
+  background-position-x: 0;
+  background-position-y: -55px;
+}
+
+.img-circle-ori {
+  background-image: url("../../assets/GraphicElements/linkedinPhotos/OriLinkedinPhoto.jpg");
+}
+
+.personal-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.personal-job {
+  font-size: 1.2rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  min-width: 400px;
+  margin-bottom: 2em;
+}
+
+.wrapper .linkedIn:hover,
+.wrapper .linkedIn:hover .tooltip,
+.wrapper .linkedIn:hover .tooltip::before {
+  background-color: #1579bb;
+  color: #ffffff;
+}
+
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+  background-color: #5dcf3b;
+  color: #ffffff;
+}
+
+.wrapper .gitHub:hover,
+.wrapper .gitHub:hover .tooltip,
+.wrapper .gitHub:hover .tooltip::before {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.wrapper .mail:hover,
+.wrapper .mail:hover .tooltip,
+.wrapper .mail:hover .tooltip::before {
+  background-color: #bb1515;
+  color: #ffffff;
+}
+
+.wrapper .contact {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.link-to {
+  color: black;
+}
+
